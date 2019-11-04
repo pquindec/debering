@@ -5,7 +5,7 @@
  */
 package formulario;
 
-import convertir.Numero_Letras;
+import convertir.transformar;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
@@ -103,8 +103,6 @@ public class ventana extends javax.swing.JFrame {
     private void textnumeroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textnumeroKeyTyped
         // TODO add your handling code here:
             char c=evt.getKeyChar();
-            
-        
           if(Character.isLetter(c)) {
               getToolkit().beep();
               
@@ -122,7 +120,7 @@ public class ventana extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Numero_Letras num = new Numero_Letras();
+        transformar num = new transformar();
         int nu = Integer.parseInt(textnumero.getText());
         num.convercion(nu);
         
